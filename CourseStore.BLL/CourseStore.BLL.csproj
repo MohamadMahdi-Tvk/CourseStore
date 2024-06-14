@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CourseStore.DAL\CourseStore.DAL.csproj" />
+    <ProjectReference Include="..\CourseStore.Model\CourseStore.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Courses\" />
+    <Folder Include="Teachers\" />
+    <Folder Include="Orders\" />
+  </ItemGroup>
+
+</Project>
